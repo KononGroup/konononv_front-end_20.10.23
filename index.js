@@ -1,12 +1,12 @@
-//7
-// const numberOne = +prompt('Write tree numbers for average', 'First number');
-// const numberTwo = +prompt('Write tree numbers for average', 'Second number');
-// const numberTree = +prompt('Write tree numbers for average', 'Third number');
+7
+const numberOne = +prompt('Write tree numbers for average', 'First number');
+const numberTwo = +prompt('Write tree numbers for average', 'Second number');
+const numberTree = +prompt('Write tree numbers for average', 'Third number');
 
-// const average = numberOne + numberTwo + numberTree;
+const average = (numberOne + numberTwo + numberTree) / 3;
 
-// alert(`You average is ${average}`);
-////////////////////////////////////////////////////////////////////////////////////
+alert(`You average is ${average}`);
+//////////////////////////////////////////////////////////////////////////////////
 
 
 //8
