@@ -1,64 +1,101 @@
-// //1.
+//7
+// const numberOne = +prompt('Write tree numbers for average', 'First number');
+// const numberTwo = +prompt('Write tree numbers for average', 'Second number');
+// const numberTree = +prompt('Write tree numbers for average', 'Third number');
 
-// const userName = prompt('What is your name', 'John');
+// const average = numberOne + numberTwo + numberTree;
 
-// userName;
-
-// alert(`Hello,${userName}! How are you ?`);
-
-////////////////////////////////////////////////////////////////////////////////////////
-
-// //2.
-
-// const question1 = prompt('Write something');
-// const question2 = prompt('Write something');
-// const question3 = prompt('Write something');
-
-// const requestQuestions = console.log(`${question1},${question2},${question3}`);
-
-// const number = prompt('Write five digit number', '12345');
-
-// const requestNumber = console.log(`${number[0]} ${number[1]} ${number[2]} ${number[3]} ${number[4]}`);
+// alert(`You average is ${average}`);
+////////////////////////////////////////////////////////////////////////////////////
 
 
-////////////////////////////////////////////////////////////////////////////////////////
+//8
 
-// //3.
+// const age = prompt('What age are you?', '18');
 
-// const firstOperand =+ prompt('addition, subtraction, multiplication and division of two numbers', 'Write first number');
-// const secondOperand =+ prompt('addition, subtraction, multiplication and division of two numbers', 'Write second number');
+//  if (age === null) {
+//         alert(`It's a pity that you didn't want to enter yours Age`)
+//     }
+// const city = prompt('What city do you live in', 'Odesa');
+//  if (city === null) {
+//         alert(`It's a pity that you didn't want to enter yours city`)
+//     }
+// const favoriteSport = prompt('Your favorite sport', 'tennis');
+//   if (favoriteSport === null) {
+//         alert(`It's a pity that you didn't want to enter yours favoriteSport`)
+//     }
+
+// if (city === 'Kyiv' ) {
+//     alert(`you age is ${age}
+    
+//     you live in the capital Of Ukraie
+//     `)
+// } if (city === 'Washington' ) {
+//     alert(`you age is ${age}
+    
+//     you live in the capital Of USA
+//     `)
+// } if (city === 'London') {
+//     alert(`you age is ${age}
+    
+//     you live in the capital Of Great Britain
+//     `)
+// } else {
+//         alert(`you age is ${age}
+    
+//     you live in the ${city}
+//     `)
+// };
+   
+
+// const sport = prompt('choose the sport you like most: football, box, basketball', 'box');
+
+
+// switch (sport) {
+//     case 'box':
+//         alert(`Cool! do you want to become Alexand Usik`);
+//         break;
+//     case 'football':
+//         alert(`Cool! do you want to become Leo Messi`);
+//         break;
+//     case 'basketball':
+//         alert(`Cool! do you want to become Lebron James`);
+//         break;
+//     default:
+//         alert(`It's a pity that you didn't choose a sport`)
+// }
+
+///////////////////////////////////////////////////////////////////////////////
+//9.
+
+// let numOrStr = prompt('input number or string');
+// console.log(numOrStr);
+
+// if(numOrStr === null) {
+// console.log('ви скасували')
+// } else if( numOrStr.trim() === '' ) {
+// console.log('Empty String');
+// } else if ( isNaN(numOrStr) ) {
+// console.log(' number is Ba_NaN')
+// } else {
+// console.log('OK!')
+// };
 
 
 
-// alert(`${firstOperand} + ${secondOperand} = ${firstOperand + secondOperand}
-//     ${firstOperand} - ${secondOperand} = ${firstOperand - secondOperand}
-//     ${firstOperand} * ${secondOperand} = ${firstOperand * secondOperand}
-//     ${firstOperand} / ${secondOperand} = ${firstOperand / secondOperand}
-// `);
-
-////////////////////////////////////////////////////////////////////////////////////////
-
-// //4.
-
-// const promptCalculator = prompt('what do you want to do ?add, subtract, multiply or divide', '+, -, *, /');
-
-// const firstNumber =+ prompt('Write first number', 'Write first number');
-// const secondNumber =+ prompt('Write second number', 'Write second number');
-
-// alert(`${firstNumber} + ${secondNumber} = ${firstNumber + secondNumber}
-//     ${firstNumber} - ${secondNumber} = ${firstNumber - secondNumber}
-//     ${firstNumber} * ${secondNumber} = ${firstNumber * secondNumber}
-//     ${firstNumber} / ${secondNumber} = ${firstNumber / secondNumber}
-// `);
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////
-
-//5.
-
-// const quantityHours =+ prompt('write the number of hours', '10');
-
-// const howManySeconds = `${quantityHours * 3600}`;
-
-// alert(`${howManySeconds}`);
 
 
+// switch (true) {
+//     case null:
+//         console.log('you canceled');
+//         break;
+//     case '':
+//         console.log('Empty String');
+//         break;
+//     case isNaN(numOrStr):
+//         console.log('number is Ba_Nan');
+//         break
+//     default:
+//         console.log('OK!');
+//         break;
+// };
