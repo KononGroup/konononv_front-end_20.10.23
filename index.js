@@ -1,101 +1,138 @@
-7
-const numberOne = +prompt('Write tree numbers for average', 'First number');
-const numberTwo = +prompt('Write tree numbers for average', 'Second number');
-const numberTree = +prompt('Write tree numbers for average', 'Third number');
+//task 10 writing loops
+//1
+// for (let i = 10; i < 21; i++){
+//     console.log(`(${i}`);
+// };
 
-const average = (numberOne + numberTwo + numberTree) / 3;
+//2
+// for (let i = 10; i < 21; i++){
+//     console.log(`${i**2}`);
+// };
 
-alert(`You average is ${average}`);
-//////////////////////////////////////////////////////////////////////////////////
+//3
+// for (let i = 0; i < 11; i++){
+//     console.log(`${7 * i}`);
+// };
 
+//4
+// let i = 0;
+// let sum = 0;
+// for (  i ; i < 16; i++) {
+//     if (i % 2 === 0) {
+//         sum += i ;
+//     }
+// };
+// console.log(sum);
+
+//5
+// let i = 15;
+// let sum =1;
+// for (  i ; i < 36; i++) {
+//     if (i % 2 === 0) {
+//         sum *= i;
+//     }
+// };
+// console.log(sum);
+
+//6
+// let sum = 0;
+// for (let i = 0; i < 501; i++) {
+//     if (i % 2 === 0) {
+//         sum += i;
+//         console.log(sum);
+//     }
+// };
+// const getAverage = sum / 500;
+
+// console.log(getAverage);
+
+//7
+// let i = 30;
+// let sum = 0;
+// for (  i ; i < 81; i++) {
+//     if (i % 2 === 0) {
+//         sum += i;
+//     }
+// };
+// console.log(sum);
 
 //8
-
-// const age = prompt('What age are you?', '18');
-
-//  if (age === null) {
-//         alert(`It's a pity that you didn't want to enter yours Age`)
+// let i = 100;
+// for (  i ; i < 202; i++) {
+//     if (i % 3 === 0) {
+//         console.log(i);
 //     }
-// const city = prompt('What city do you live in', 'Odesa');
-//  if (city === null) {
-//         alert(`It's a pity that you didn't want to enter yours city`)
-//     }
-// const favoriteSport = prompt('Your favorite sport', 'tennis');
-//   if (favoriteSport === null) {
-//         alert(`It's a pity that you didn't want to enter yours favoriteSport`)
-//     }
-
-// if (city === 'Kyiv' ) {
-//     alert(`you age is ${age}
-    
-//     you live in the capital Of Ukraie
-//     `)
-// } if (city === 'Washington' ) {
-//     alert(`you age is ${age}
-    
-//     you live in the capital Of USA
-//     `)
-// } if (city === 'London') {
-//     alert(`you age is ${age}
-    
-//     you live in the capital Of Great Britain
-//     `)
-// } else {
-//         alert(`you age is ${age}
-    
-//     you live in the ${city}
-//     `)
 // };
-   
 
-// const sport = prompt('choose the sport you like most: football, box, basketball', 'box');
+//9,10, 11
+// let naturalNum = +prompt('Enter any natural number', '...');
+// let count = 0;
+// let sum = 0;
+// for (let i = 2; i * 2 <= naturalNum; i++) {
+//   if (naturalNum % i === 0) {
+//       console.log(`divider ${naturalNum} is ${i}`);
 
+//       if (i % 2 === 0) {
+//           count++
+//           sum += i;
+//       }
+//   }
+// };
 
-// switch (sport) {
-//     case 'box':
-//         alert(`Cool! do you want to become Alexand Usik`);
-//         break;
-//     case 'football':
-//         alert(`Cool! do you want to become Leo Messi`);
-//         break;
-//     case 'basketball':
-//         alert(`Cool! do you want to become Lebron James`);
-//         break;
-//     default:
-//         alert(`It's a pity that you didn't choose a sport`)
+// console.log(`number of even divisors: ${count}
+// sum of even divisors: ${sum}`);
+
+//12
+// let table = "";
+
+// for (a = 1; a <= 10; a++){
+
+//     for (b = 1; b <= 10; b++) {
+
+//         const result = String(a * b);
+//         tt += ' '.repeat(4 - result.length) + result;
+//     }
+//     tt += '\n';
+// }
+// console.log(table);
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+//task 11 Folding cycles
+
+//1
+// for (let i = 20; i < 31; i += 0.5){
+//     console.log(i);
 // }
 
-///////////////////////////////////////////////////////////////////////////////
-//9.
+//2
 
-// let numOrStr = prompt('input number or string');
-// console.log(numOrStr);
+// const dollarInUah = 27;
+// for (let i = 10; i < 101; i += 10 ) {
+//     let result = dollarInUah * i;
+//     console.log(result);
+// }
 
-// if(numOrStr === null) {
-// console.log('ви скасували')
-// } else if( numOrStr.trim() === '' ) {
-// console.log('Empty String');
-// } else if ( isNaN(numOrStr) ) {
-// console.log(' number is Ba_NaN')
-// } else {
-// console.log('OK!')
+//3, 4, 5 
+// let evenNum = +prompt('Enter any even number', '...');
+// let N = evenNum;
+// for (let i = 0; i < 100; i++) {
+//     if (N > Math.pow(i, 2)) {
+//       console.log(i);
+//     }
 // };
-
-
-
-
-
-// switch (true) {
-//     case null:
-//         console.log('you canceled');
-//         break;
-//     case '':
-//         console.log('Empty String');
-//         break;
-//     case isNaN(numOrStr):
-//         console.log('number is Ba_Nan');
+// for (let i = 2; i * 2 <= N; i++) {
+//   if (N % i === 0) {
+//       console.log(`you number is not prime`);
 //         break
-//     default:
-//         console.log('OK!');
-//         break;
+//   } else {
+//       console.log(`you number is prime`);
+//       break
+//   }
 // };
+// console.log(N);
+
+// while (N % 3 === 0) {
+//     N /= 3;
+// };
+
+// console.log(N === 1 ? true : false );
